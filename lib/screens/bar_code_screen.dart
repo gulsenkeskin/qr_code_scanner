@@ -46,7 +46,7 @@ class _BarCodeScreenState extends State<BarCodeScreen> {
           type: BottomNavigationBarType.fixed,
           currentIndex: _selectedIndex,
           unselectedItemColor: Colors.white,
-          selectedItemColor: const Color(0XFF5fa693),
+          selectedItemColor:Colors.purpleAccent,
           iconSize: 40,
           onTap: _onItemTapped,
           elevation: 5),
