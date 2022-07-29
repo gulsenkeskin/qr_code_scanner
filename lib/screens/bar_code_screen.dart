@@ -24,8 +24,8 @@ class _BarCodeScreenState extends State<BarCodeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("QR Code Scanner  & QR Code Generator"),
-        backgroundColor: Colors.black54,
+        title: Center(child: Text(_selectedIndex==0 ? "QR Code Scanner" : "QR Code Generator")),
+        backgroundColor: Colors.black45,
       ),
       body: Center(
         child: _widgetOptions.elementAt(_selectedIndex),
