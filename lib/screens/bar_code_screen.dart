@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:qr_code_scanner/screens/qr_code_generator.dart';
+import 'package:qr_code_scanner/screens/qr_code_scanner.dart';
 
 class BarCodeScreen extends StatefulWidget {
   const BarCodeScreen({Key? key}) : super(key: key);
@@ -9,7 +11,8 @@ class BarCodeScreen extends StatefulWidget {
 
 class _BarCodeScreenState extends State<BarCodeScreen> {
   int _selectedIndex = 0;
-  List<Widget> _widgetOptions = <Widget>[Column(), Column()];
+ List<Widget> _widgetOptions = <Widget>[QrCodeScanner(), QrCodeGenerator()];
+
 
   void _onItemTapped(int index) {
     setState(() {
