@@ -19,5 +19,6 @@ class ButtonWidget extends StatelessWidget {
       ),
       onPressed: onClicked,
       style: ElevatedButton.styleFrom(
-          textStyle: const TextStyle(fontSize: 25), primary: Colors.grey));
+        minimumSize: Size(MediaQuery.of(context).size.width/3, 60),
+          textStyle: const TextStyle(fontSize: 25), primary: Colors.purple[200]),);
 }
